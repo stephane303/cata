@@ -1,0 +1,76 @@
+/*position du logo*/
+#logo {
+position: relative;
+top: -19px;
+}
+/*titre du Slide*/
+#slides .caption h2 {
+font-family: Roboto Slab;
+font-size: 60px;
+font-variant: small-caps;
+font-weight: normal;
+}
+/*sous titre page accueil slide*/
+#slides .caption h4 {
+font-family: Roboto Slab;
+font-size: 24px;
+font-weight: normal;
+}
+/*boutons*/
+.btn, a.btn, a.btn:visited, a.btn:link {
+font-weight: normal;
+}
+/*couleur h1*/
+h1, .h1 {
+color: #555;
+font-weight: normal;
+}
+/*police de caractère en 700*/
+.weight-700 {font-weight: normal;
+}
+/*.color-primary {
+color: #39adff !important;
+font-weight: normal;
+}*/
+body {
+font-family: roboto slab;
+background-color: #FFF;
+color: #555;
+font-size: 13px;
+font-weight: normal;
+line-height: 1.64285;
+overflow-x: hidden;
+height: auto;
+position: relative;
+}
+
+#titre-tel {display:none;}
+@media  (max-width: 400px) {
+   #logo {
+       display: none !important;
+   }
+
+   #slides .caption h2 {
+   	font-size: 20px;
+   }
+   #slides .caption h4 { 
+     font-size: 15px; 
+   } 
+
+   .slides-navigation {
+   	  display:none;
+   }
+
+   .style-switch-wrapper {
+   	  display:none;
+   }
+
+   #titre-tel {
+   	display:block;
+   	font-size: 30px;
+   	margin-left: 18px;
+   }
+}
+
+
+
