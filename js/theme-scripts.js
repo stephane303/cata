@@ -172,6 +172,19 @@ $('#accordion .panel a').on('click',function(e){
     }
 });
 })(jQuery);
+
+(function($) { "use strict";
+var $accordion1 = $('#accordion1 .panel a');
+$accordion1.click(function(){
+   $accordion1.removeClass('selected');
+   $(this).addClass('selected');
+});
+$('#accordion1 .panel a').on('click',function(e){
+    if($(this).parents('.panel').children('.panel-collapse').hasClass('in')){
+     $accordion1.removeClass('selected');
+    }
+});
+})(jQuery);
 // ========= END BOOTSTRAP ACCORDION SETTINGS ========== //
 
 // ========== 12. START OWL SLIDER SETTINGS ========== //
@@ -211,7 +224,7 @@ $(document).ready(function() {
 $(document).ready(function() {
     $('#slides').superslides({
       animation: 'fade',
-	   play: 4000,
+	   play: 7000,
 	   pagination: true,
     });
 			});	 })(jQuery);
